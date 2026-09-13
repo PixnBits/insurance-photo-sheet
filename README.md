@@ -50,7 +50,7 @@ jsPDF is loaded from jsDelivr. The published page needs network access for that 
 Indexing is not ranking. A new `github.io` how-to will not beat ten-year-old blogs for `roof damage insurance claim`. This is for the long tail: `send photos to insurance adjuster PDF`, `how to label photos for insurance claim`.
 
 1. [Google Search Console](https://search.google.com/search-console) → add URL-prefix property `https://pixnbits.github.io/insurance-photo-sheet/`
-2. Verify with an HTML file uploaded to this repo (easiest on Pages).
+2. Verify with the HTML file already at the repo root (`google43bf260e2ff0f9de.html`). Do not delete it.
 3. URL Inspection → request indexing on the homepage.
 4. Sitemaps → submit `https://pixnbits.github.io/insurance-photo-sheet/sitemap.xml`
 5. Same idea in [Bing Webmaster](https://www.bing.com/webmasters) (it will often take the GSC verify).
