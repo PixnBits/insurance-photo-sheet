@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to send photos to an insurance adjuster</title>
+    <meta
+      name="description"
+      content="How to send photos to an insurance adjuster so they actually open the file. Label them, put them in order, download one PDF. Nothing is uploaded."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.goatcounter = {
+        allow_local: true,
+      };
+    </script>
+    <script
+      data-goatcounter="https://pixnbits.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#tool">Skip to the PDF tool</a>
+
+    <div class="page">
+      <header class="masthead">
+        <h1>How to send photos to an insurance adjuster</h1>
+        <p class="subtitle">so they actually open the file</p>
+      </header>
+
+      <div class="lead">
+        <p>The desk will not click your Dropbox.</p>
+        <p>They will not scroll a 130-photo gallery.</p>
+        <p>
+          They will not guess that the blurry wide shot of the living room is
+          the cracked lamp.
+        </p>
+        <p>
+          They want <strong>one PDF</strong>. Labeled. In order. Small enough to
+          email.
+        </p>
+        <p>
+          This page is the ritual. The tool under it builds that PDF in your
+          browser. Nothing is uploaded.
+        </p>
+      </div>
+
+      <section aria-labelledby="bounced-heading">
+        <h2 id="bounced-heading">What gets the file bounced</h2>
+        <ul class="quotes">
+          <li>
+            “Wish we could use Dropbox or album links, but most won’t allow it.”
+          </li>
+          <li>
+            “Ended up in the 130-picture range — had to split it into several
+            PDFs.”
+          </li>
+          <li>
+            “For God’s sake label your photos. Don’t expect someone to know what
+            you’re trying to show. If it’s a roof, label it as ‘north slope,
+            shingles missing.’”
+          </li>
+          <li>
+            “No, I didn’t see the cracked lamp in the photo of your entire
+            living room.”
+          </li>
+          <li>
+            “The photos that were uploaded aren’t properly labeled or associated
+            with the rooms in which they were taken.”
+          </li>
+        </ul>
+        <p>
+          If you already have CompanyCam, JobNimbus, AccuLynx, or a shared
+          drive: good. That is capture. This page is the packet the other office
+          files.
+        </p>
+      </section>
+
+      <section aria-labelledby="ritual-heading">
+        <h2 id="ritual-heading">The ritual</h2>
+        <ol class="ritual">
+          <li>
+            <strong>Sequence, don’t dump.</strong> Roof: elevations first, then
+            each slope, then close-ups, then interiors if they matter.
+            Water/interior: address/exterior, then room by room, then the defect
+            close-up. Progress: before, during, after — same angle if you can.
+          </li>
+          <li>
+            <strong>One caption that names the place and the fact.</strong> Not
+            <code>IMG_4402</code>. Yes:
+            <code>North slope — 4 missing shingles at hip</code>. Yes:
+            <code>Kitchen ceiling — 12-inch stain above sink, no active drip</code>.
+          </li>
+          <li>
+            <strong>Attachment, not a link.</strong> One PDF. If the portal caps
+            size, two PDFs split by elevation or floor — still labeled. Not a
+            gallery URL.
+          </li>
+          <li>
+            <strong>Leave the junk out.</strong> Thumb, truck bumper, third
+            identical wide shot.
+          </li>
+          <li>
+            <strong>You stay the editor.</strong> This page does not pick “the
+            photos that win the claim.”
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="looks-heading">
+        <h2 id="looks-heading">What the PDF looks like</h2>
+        <p>
+          Cover line: address, date, claim or job number if you typed them.
+          Photos in your order. Caption under each frame. Small enough to email.
+          No watermark.
+        </p>
+      </section>
+
+      <section id="tool" class="tool" aria-labelledby="tool-heading">
+        <h2 id="tool-heading">Build the PDF here</h2>
+        <p>
+          Photos stay in this browser. The file is built on your machine. If the
+          set is huge, split it yourself by elevation or floor.
+        </p>
+        <p class="privacy-note">
+          Page-use counts only (photos added, PDF downloaded). Photos and
+          captions never leave this browser.
+        </p>
+
+        <form id="sheet-form" class="sheet-form" novalidate>
+          <fieldset class="cover-fields">
+            <legend>Cover line (optional)</legend>
+            <div class="field">
+              <label for="cover-address">Property address</label>
+              <input
+                id="cover-address"
+                name="address"
+                type="text"
+                autocomplete="street-address"
+                spellcheck="false"
+                placeholder="123 Main St, City"
+              />
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cover-date">Date</label>
+                <input id="cover-date" name="date" type="date" />
+              </div>
+              <div class="field">
+                <label for="cover-claim">Claim or job #</label>
+                <input
+                  id="cover-claim"
+                  name="claim"
+                  type="text"
+                  autocomplete="off"
+                  spellcheck="false"
+                  placeholder="Optional"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <div
+            id="dropzone"
+            class="dropzone"
+            tabindex="0"
+            role="button"
+            aria-controls="photo-input"
+            aria-label="Add photos. Click or drop JPEG, PNG, or WebP files here."
+          >
+            <input
+              id="photo-input"
+              class="visually-hidden"
+              type="file"
+              accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp"
+              multiple
+            />
+            <p class="dropzone-title">Add photos</p>
+            <p class="dropzone-hint">
+              JPEG, PNG, or WebP. Click or drop files here. HEIC from iPhone is
+              not accepted — export JPEG first.
+            </p>
+          </div>
+
+          <p id="skip-note" class="skip-note" hidden></p>
+
+          <div class="list-head">
+            <h3 class="list-heading">Photos</h3>
+            <p id="photo-count" class="photo-count">None yet</p>
+          </div>
+
+          <ol id="photo-list" class="photo-list" aria-label="Photo list"></ol>
+
+          <p id="empty-hint" class="empty-hint">
+            Add photos, put them in order, fix the captions, then download.
+          </p>
+
+          <p id="size-warning" class="size-warning" hidden>
+            This will be a large email. Split by elevation if the portal caps
+            attachments.
+          </p>
+
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+
+          <div class="actions">
+            <button id="download-btn" class="btn-primary" type="button">
+              Download PDF
+            </button>
+          </div>
+        </form>
+
+        <div id="desk-followup" class="desk-followup" hidden>
+          <p>Did the desk file this PDF?</p>
+          <div class="desk-actions">
+            <button id="desk-filed" class="btn-quiet" type="button">
+              Filed it
+            </button>
+            <button id="desk-bounced" class="btn-quiet" type="button">
+              Sent it back
+            </button>
+          </div>
+          <p id="desk-thanks" class="desk-thanks" hidden></p>
+        </div>
+      </section>
+
+      <section aria-labelledby="not-heading">
+        <h2 id="not-heading">What this is not</h2>
+        <p>
+          Not another camera app. Not CompanyCam, Encircle, or Xactimate. Not an
+          AI that decides what the damage is. Not a public-adjuster pitch.
+        </p>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          If a desk still kicks the file back, the exact sentence they used is
+          the next version of the ritual.
+          <a href="mailto:?subject=desk%20bounce"
+            >Email the bounce sentence</a
+          >
+          (no photo attachments).
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js"
+      defer
+    ></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
