@@ -10,6 +10,8 @@ Repo layout (GitHub Pages, **branch `main`, folder `/ (root)`**):
 index.html
 styles.css
 app.js
+robots.txt
+sitemap.xml
 README.md
 ```
 
@@ -33,13 +35,27 @@ Checklist:
 
 ## Publish on GitHub Pages
 
-1. Put `index.html`, `styles.css`, `app.js`, and this `README.md` at the root of a GitHub repository.
+1. Put `index.html`, `styles.css`, `app.js`, `robots.txt`, `sitemap.xml`, and this `README.md` at the root of a GitHub repository.
 2. Repo **Settings → Pages → Build and deployment**.
 3. Source: **Deploy from a branch**.
 4. Branch: `main`, folder: `/ (root)`. Save.
 5. The site is `https://pixnbits.github.io/insurance-photo-sheet/`.
 
-jsPDF is loaded from jsDelivr. The published page needs network access for that script (and for GoatCounter, once enabled).
+jsPDF is loaded from jsDelivr. The published page needs network access for that script (and for GoatCounter).
+
+`robots.txt` and `sitemap.xml` live at the site root so crawlers can find the one URL. Canonical in `index.html` points at that same URL so GitHub’s extra hosts do not look like copies.
+
+## Ask the search engines (once Pages is live)
+
+Indexing is not ranking. A new `github.io` how-to will not beat ten-year-old blogs for `roof damage insurance claim`. This is for the long tail: `send photos to insurance adjuster PDF`, `how to label photos for insurance claim`.
+
+1. [Google Search Console](https://search.google.com/search-console) → add URL-prefix property `https://pixnbits.github.io/insurance-photo-sheet/`
+2. Verify with an HTML file uploaded to this repo (easiest on Pages).
+3. URL Inspection → request indexing on the homepage.
+4. Sitemaps → submit `https://pixnbits.github.io/insurance-photo-sheet/sitemap.xml`
+5. Same idea in [Bing Webmaster](https://www.bing.com/webmasters) (it will often take the GSC verify).
+
+Expect “Discovered / Crawled / Indexed” over days to a couple of weeks, not hours. `site:pixnbits.github.io/insurance-photo-sheet` staying empty the same afternoon you ship is not a failure.
 
 ## Enable GoatCounter (metrics)
 

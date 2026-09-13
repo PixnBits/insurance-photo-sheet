@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pixnbits.github.io/insurance-photo-sheet/sitemap.xml
